@@ -5,9 +5,9 @@ import React from 'react'
 
 const NotificationEmail = () => {
   return (
-    <div className='notification-card rounded-lg w-[190px] p-[14px] flex flex-col gap-[14px] '>
+    <div className='notification-card rounded-lg w-[190px] p-[14px] h-[170px] flex flex-col gap-[14px] '>
         <div className='flex justify-between'>
-            <Image src={'/assets/bell.svg'} width={24} height={24} alt={'bell'}/>
+            <Image src={'/assets/bell.svg'} width={28} height={28} alt={'bell'}/>
             <button className='text-[9.1px] font-semibold h-fit'>
                 Save
             </button>

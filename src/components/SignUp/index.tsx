@@ -3,10 +3,10 @@ import React from "react";
 import useSignUp from "./view/useSignUp";
 import { Formik, Form, Field } from "formik";
 const SignUp = () => {
-  const { SignupSchema, onSubmit } = useSignUp();
+  const { SignupSchema, onSubmit,onTextChange } = useSignUp();
   console.log({ SignupSchema, onSubmit });
   return (
-    <div className="flex justify-center items-center h-screen w-full">
+    <div className="flex justify-center items-center h-full w-full">
       <div className="max-w-fit ">
         <h1 className="text-[#B0B1B3] text-4xl mb-8">
           Sign up for
@@ -24,6 +24,7 @@ const SignUp = () => {
                 name="email"
                 type="email"
                 placeholder="Your email address"
+                // onChange={onTextChange}
                 className="border border-[#E5E5E6] rounded-lg py-5 px-4 placeholder:text-base placeholder:font-medium sign-up-input"
               />
               {(errors.email && touched.email) ? <div className="mt-2 ml-2 text-sm text-red-500 font-medium">{errors.email}</div> : null}
