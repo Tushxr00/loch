@@ -3,7 +3,7 @@ import React from "react";
 import useSignUp from "./view/useSignUp";
 import { Formik, Form, Field } from "formik";
 const SignUp = () => {
-  const { SignupSchema, onSubmit,onTextChange } = useSignUp();
+  const { SignupSchema, onSubmit,isEmailSent } = useSignUp();
   console.log({ SignupSchema, onSubmit });
   return (
     <div className="flex justify-center items-center h-full w-full">
@@ -37,9 +37,10 @@ const SignUp = () => {
             </Form>
           )}
         </Formik>
-        <p className="text-center py-4 mt-6">
-          You’ll receive an email with an invite link to join.
-        </p>
+          <p className="text-center py-4 mt-6 relative">You’ll receive an email with an invite link to join.</p>
+          {(isEmailSent) && <p className="text-center bg-green-100 font-medium text-base rounded mt-2 text-green-900">
+          Email sent
+        </p>}
       </div>
     </div>
   );

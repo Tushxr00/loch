@@ -3,10 +3,10 @@ import React from 'react'
 
 const AppInfo = () => {
   return (
-    <section className='flex items-start gap-8 mt-[60px]'>
-      <div className='relative w-1/2'>    
+    <section className='flex items-start gap-8 xl:mt-[60px]'>
+      <div className='relative w-1/2 h-10'>    
       <div className='absolute top-0 left-0 w-1/2'>
-      <div className='relative w-[450px] aspect-square -left-[60px] -top-[100px]'>
+      <div className='relative w-[350px] xl:w-[450px] aspect-square -left-[60px] -top-[50px] xl:-top-[100px]'>
       <Image src={'/assets/Cohorts-1.svg'} 	fill={true} alt='app-info-image'/>
       </div>
       </div>    

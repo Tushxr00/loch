@@ -3,7 +3,7 @@ import React from 'react'
 
 const NotificationDays = () => {
   return (
-      <div className='!bg-white   rounded-lg w-[190px] p-[14px]  flex flex-col gap-[14px] justify-between'>
+      <div className='!bg-white   rounded-lg w-[190px] p-[14px] h-[170px]  flex flex-col gap-[14px] justify-between'>
           <div className='flex justify-between'>
               <Image src={'/assets/clock.svg'} width={28} height={28} alt={'bar-chat'}/>
               <input type='checkbox' defaultChecked className='rounded w-[14px] h-[14px] p-1'/>
