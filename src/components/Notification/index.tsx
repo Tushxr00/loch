@@ -56,9 +56,8 @@ const Notification = () => {
           on-chain or when a dormant whale you care about becomes active.
         </p>
       </div>
-
         <div className=" w-full" style={{
-          display:initialized?'block':'none'
+          display:initialized?'block':'none' ,
         }}>
           <Slider {...settings} >
             <div className='mx-4'>

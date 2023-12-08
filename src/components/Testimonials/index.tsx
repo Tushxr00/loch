@@ -5,7 +5,7 @@ import React, { useRef } from 'react'
 import Slider from 'react-slick';
 
 const Testimonials = () => {
-  const sliderRef = useRef();
+  let sliderRef = useRef<any>();
   const onSlideClick=()=>{
     if(sliderRef?.current){
       // ts-ignore
