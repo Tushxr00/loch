@@ -37,7 +37,7 @@ const Testimonials = () => {
           {[...testimonials].map(data=>(
             <div key={data.name} className='px-2'>
             <div onClick={onSlideClick} className='min-w-[353px] p-5  bg-white rounded-xl testimonial-card-shadow font-normal text-base leading-[120%]'>
-            <h4 className='flex mb-5 text text-[#19191A]'>{data.name} <span className='text-[13px] text-[#96979A]'> {data.org}</span></h4> 
+            <h4 className='flex mb-5 text text-[#19191A] items-end'>{data.name} <span className='text-[13px] text-[#96979A] block ml-1'> {data.org}</span></h4> 
             <div className='min-h-[60px] text-[#1D2129] text-sm'>{data.comment.split('|').map((item)=>(
               <p key={item} className='xl:whitespace-nowrap'>{item}</p>
             ))}
